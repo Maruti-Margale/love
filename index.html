@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+     <body ng-app="" align="center">
+            <h3>Select Dropdown List</h3>
+          <select ng-model="love">
+               <option value="1">144p</option>
+               <option value="2">360p</option>
+               <option value="3">720p</option>
+               <option value="4">1080p</option>
+          </select>
+
+          <br>
+         <div ng-switch="love">
+          <div ng-switch-when="1">
+               <img src="heart-36-3.png"  height="300" width="300" >
+          </div>
+          <div ng-switch-when="2">
+               <img src="heart-87-1024x849.png" height="300" width="300" >
+          </div>
+          <div ng-switch-when="3">
+               <img src="1578912.png" height="300" width="300" >
+          </div>
+          <div ng-switch-when="4">
+               <h1>YOU</h1>
+          </div>
+         </div>
+     </body>
+</html>
